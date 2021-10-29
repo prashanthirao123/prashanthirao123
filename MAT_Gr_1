@@ -1,0 +1,121 @@
+%product of two numbers a and b(Example-1)
+a=1   %Assign a=1
+b=2   %assign b=2
+a*b   % gives the product of a and b
+ans = 2
+
+%Express the numbers in words(Example-2)
+
+
+%Arrange the numbers in ascending order(Example-3)
+A=[1,5,6,4,3,2,0]  %initialising
+B=sort(A)
+B= 0,1,2,3,4,5,6
+
+
+%To find the greatest value and the least value in the list of given numbers(Example-4)
+A=[1,2,30,5,6,7]  %initialisation
+B=max(A)
+Ans=30
+B=min(A)
+Ans=1
+
+%Writing numbers from 1 to 200(Example-5)
+startingValue=1;
+out=startingValue:1:startingValue+2*count-1
+
+
+%Writing even numbers from 1 to 200 (Example-6)
+startingValue=1;
+out=startingValue:2:startingValue+2*count-1
+
+Writing odd numbers from 1 to 200 (Example-7)
+startingValue=1;
+out=startingValue:2:startingValue+1*count+1
+
+
+% skip counting in 3s (Example-8)
+startingValue=0;
+out=startingValue:3:startingValue+3*count
+
+
+% skip counting in 5s (Example-9)
+startingValue=0;
+out=startingValue:5:startingValue+5*count
+
+
+% skip counting in 10s (Example-10)
+startingValue=0;
+out=startingValue:10:startingValue+10*count
+
+% addition of two numbers (Example-11)
+a=2
+b=3
+c=a+b
+
+%subtraction of two numbers (Example-12)
+a=1
+b-3
+c=a-b
+
+%multiplication of twwo numbers  (Example-13)
+a=2
+b=3
+c=a*b
+
+%division of two numbers (Example-14)
+a=3
+b=2
+c=a/b
+
+% power form (Example-15)
+a=2
+b=3
+c=a^b
+
+%logarithm  (Example-16)
+a=2
+b=log(a)
+
+%division by 0 (Example-17)
+a=1
+b=0
+c=a/b
+Ans:inf
+
+
+% draw two line segments  (Example-18)
+x1=rand(1,2);
+y1=rand(1,2);
+x2=rand(1,2);
+y2=rand(1,2);
+subplot(1,2,1)
+plot([x1,y1],[x2,y2])
+
+% draw a circle (Example-19)
+p=nsidedpoly(1000,'Center',[2,3],'Radius',5);
+plot(p,'FaceColor','r')
+axis equal
+
+% draw a ellipse (Example-20)
+p=nsidedpoly(1000,'Center',[2,3],'Radius',5);
+plot(p,'FaceColor','g')
+
+
+% draw a rectangle-syntax             (Example-21)
+rectangle('Position',[1 2 5 6])
+axis([0 10 0 10])
+
+
+% draw a rectangle with colours  (Example-22)
+rectangle('Position', [x1, y1, x2-x1, y2-y1], 'FaceColor', 'r', 'EdgeColor', 'k');
+
+% Draw a square  (Example-23)
+rectangle('Position', [x1, y1, x2-x1, y2-y1], 'FaceColor', 'r', 'EdgeColor', 'k');
+axis equal
+
+% Draw a triangle (Example-24)
+p = nsidedpoly(3, 'Center', [1 ,1], 'SideLength', 1);
+plot(p);
+
+
