@@ -1,0 +1,207 @@
+% To store a 1x10 matrix having consective numbers
+x=1:10 %displays a 1x10 matrix having consecutive numbers from 1 to 10
+
+%To create an array of numbers with a given spacing
+%create a row vector named x that starts at 1 and ends at 5 with a spacing of 0.5
+x=1:0.5:5 % displays 1,1.5,2,2.5,3,3.5,4,4.5 and 5
+
+% If you know the number of elements you wnat in a vector, use
+linspace(first, last, number_of_elements)
+x=linspace(0,1,5) %displays 0,0.250,0.500, 0.750,1.000 and creates only row vectors
+
+% To create column vectors,convert row vector to column vector
+x=1:3;
+x=x'
+
+% create a column vector named x that starts at 5 and ends at 9 and has elements that are spaced by 2
+x=(5:2:9)' % displays a column vector of order 3x1 having the elements 5,7,9
+
+% create a variable named x that is a 5x5 matrix of random numbers
+x=rand(5) %creates a square matrix
+
+% create a non-square matrix
+x=rand(2,3)  % displays a 2x3 matrix
+
+% create a matrix with all its elements as ones
+x=ones(2,3) 
+
+%create a matrix with all elements zeros
+x=zeros(5,6)
+
+% extract values from an array using row,column indexing
+y=A(5,7)
+
+%Create a variable x that contains the value in the 6th row and the 3rd column of the variable data
+load datafile % code sets up the interaction
+data
+x=data(6,3)
+
+Use the end keyword to obtain the value in the last row and 3rd column of the variable data.Assign this to variable x
+load datafile %code sets up the interaction
+data
+x=data(end,3)
+
+% use of arithmetic with the keyword end
+x=A(end-1, end-2)
+
+% create a scalar variable x that contains the value in the second to last (end-1)row and 3rd column of the data.
+x=data(end-1,3)
+
+% when used as an index, the colon operator(:) specifies all the elements in that dimension
+x=A(2,:) % creates a row vector containing  all of the elements in the second row
+
+%create a variable named density that contains the second column of the matrix named data
+density=data(:,2)
+
+% create a range of values 
+x=A(1:3,:) % creates a matrix containing the first,second and third rows of the matrix A
+
+% create a variable volumes containing the last two columns of the data
+load data 
+data
+volumes=data(:,3:4)
+
+% A single index value can be used to refernce vector elements.
+load data 
+data
+x=v(3) % returns the 3rd element of the vector v when v is either a row or a column vector.
+
+% Using a single index value, create a variable named p containing the 6th element in the vector density
+load data 
+data
+p= density(6) 
+
+% A single range of index values can be used to reference a subset of vector elements.
+load data 
+data
+x=v(3: end) % returns a subste of vector v containing the elements from 3 to end
+
+% A single range of index values, create a vector named p containing the 2nd through 5th elements of density
+load data 
+data
+p=density(2:5)
+
+% create a vector v2 containing the last column of the data
+load datafile
+data
+v2=data(:,end)
+
+% create a vector v2 containing the last row of the data
+load datafile
+data
+v2=data(end,:)
+
+ %elements of a variable can be altered by combining indexing with assignment
+ load datafile
+data
+ A(2)=11 %
+ 
+ % change the first element in v2 from NaN to 0.5
+ %Array indices must be positive integers or logical values
+ load datafile
+ data
+ v2(1)=0.5
+ 
+ % A 7x4 matrix having 1st row and 4th column element as NaN.Replace that by 0.5
+ load datafile
+ data
+ data(1,4)=0.5
+ 
+ %adding scalar values for all the elements in an array
+ load datafile %initialisies the data
+ density=data(:,2)
+ v1=data(:,3);
+ v2=data(:,4);
+ r=v1+1 % add 1 to all the elements of v1 and store in r
+ 
+ %adding two vectors
+ load datafile %initialisies the data
+ density=data(:,2)
+ v1=data(:,3);
+ v2=data(:,4);
+ vs=v1+v2 % add two vectors and stores in vs
+ 
+ %finding average of two vectors two vectors
+ load datafile %initialisies the data
+ density=data(:,2)
+ v1=data(:,3);
+ v2=data(:,4);
+ va=(v1+v2)/2  
+ 
+ % To find the maximum value of the vector v_m containing the vector v_a
+ load datafile %initialisies the data
+ density=data(:,2)
+ v1=data(:,3);
+ v2=data(:,4);
+ va=(v1+v2)/2  
+ vm=max(va)
+ 
+ % To round off the va value
+ load datafile %initialisies the data
+ density=data(:,2)
+ v1=data(:,3);
+ v2=data(:,4);
+ va=(v1+v2)/2
+ vr=round(va)
+ 
+ %Array multiplication
+ z=[1 2].*[3 4]  % Result is 3 8
+ 
+ % Find the product of mass=density x va
+ mass= density.*va
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
