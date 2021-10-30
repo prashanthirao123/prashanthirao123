@@ -1,0 +1,25 @@
+% To save the workspace to a MAT file named filename.mat
+save filename
+
+%save the workspace variable to a file named datafile.mat
+save datafile.mat
+
+%To clear the workspace for creating new program
+clear  % clears the workspace
+
+%load the variables from the mat file
+load filename
+
+%load the variables from the file datafile.mat
+load datafile.mat
+
+%The variable data is listed in the workspace.You can see contents of any variable by entering name of the variable
+myvar
+
+%display the contents of the variable data
+data  % displays all the variables in the data
+
+To clean the workspace, use clear command
+clc  %cleans up the command window
+
+
