@@ -1,0 +1,38 @@
+% create an array with the elements 2,5
+x = [2 5] % creates a row vector
+
+% create an array with the elements 2,5
+x=[2 ; 5] % creates a column vector
+
+% create a 2x3 matrix with the elements 1,2,3 and 4,5,6
+x= [1 2 3; 4 5 6]
+
+% create a row vector named x that contains sqrt(10) and pi^2 as second element
+x=[sqrt(10) pi^2]    % returns the values of square root of 10 and pi^2
+
+% create a row vector starts at 1, ends at 10 and contains 5 elements
+x=linspace(1, 10,5)
+
+% create a column vector named x that starts at 5,ends at 9 and has elements that are spaced by 2
+x=(5:2:9)'
+
+%create a variable named dsize containing the size of the data variable
+load datafile
+data
+v1=data(:,3);
+v2=data(;,4);
+dsize=size(data)
+
+%create variables dr and dc which respectively contain the number of rows and columns of the variable data
+load datafile
+data
+v1=data(:,3);
+v2=data(;,4);
+[dr, dc]=size(data)
+
+%create the variables vMax and ivMax containing the maximum value of the v2 vector and the corresponding index value respectively.
+load datafile
+data
+v1=data(:,3);
+v2=data(;,4);
+[vmax,ivMax]=max(v2)
