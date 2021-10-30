@@ -1,0 +1,14 @@
+% set up the interaction
+load datafile.mat
+sample=data(:,1);
+v1=data(:,3);
+% Test if pi is less than 4 and assign the output to a variable test
+test=pi<4
+% Test the vector v1 for elements that are less than 4 and assign the output to a variable named test
+test= v1<4
+% create a variable v containing all the elements v1 that are less than 4
+v=v1(v1<4)
+% create a variable s that contains the elements in sample corresponding to where v1 is less than 4
+s=sample(v1<4)
+% modify v1 so that any value less than 4 is replaced with the value 0
+v1(v1<4)=0
