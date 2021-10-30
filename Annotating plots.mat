@@ -1,0 +1,47 @@
+% Add the title "Sample Mass" to the existing plot
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(sample,mass1,"ks")
+hold on
+plot(sample,mass2,"r*")
+hold off
+title("Sample Mass") %add the title to the exisitng plot
+
+% Use the ylabel function to add the label "Mass(g)"
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(sample,mass1,"ks")
+hold on
+plot(sample,mass2,"r*")
+hold off
+title("Sample Mass") %add the title to the exisitng plot
+ylabel("Mass(g)")
+
+% create a legend with the labels "Exp A" and "Exp B", in that order.
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(sample,mass1,"ks")
+hold on
+plot(sample,mass2,"r*")
+hold off
+title("Sample Mass") %add the title to the exisitng plot
+ylabel("Mass(g)")
+Legend("Exp A","Exp B")
+
+
+
