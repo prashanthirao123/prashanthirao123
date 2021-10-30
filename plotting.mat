@@ -1,0 +1,88 @@
+% create a matrix x that contains random integers from 1 to 20 has 5 rows and 10 columns
+x=randi(20,5,10)
+
+% Two vectors of the same length can be plotted agaiinst each other 
+plot(x,y)
+
+% create a plot with sample on the x-axis and the mass1 on the y-axis
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(sample,mass1) % plots the graph
+
+% The plot function accepts an additional argument that allows you to specify the color,line,style, and marker style using different symbols
+plot(x,y,"r--o") % r is red color, dashed line(--) and o as a marker
+
+Plot mass2(y-axis) against sample(x-axis).Use red(r) star(*) markers and no line in your plot
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(sample,mass2,"r*")
+
+% To plot one line on top of another, use the hold on command to hold the previous plot while you add another line
+plot(x1,y1)
+hold on
+plot(x2,y2)
+
+% plot mass1 on y-axis and sample on x-axis with black(k) and square(s) markers and no line.
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(sample,mass1,"ks")
+
+% while the hold state is on, plots will continue to go on the same axes.To return to the default plot behavious, where each plot gets its own axes
+hold off
+
+% plot mass1 on y-axis and sample on x-axis with black(k) and square(s) markers and no line and bring to the previous frame.
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(sample,mass1,"ks")
+hold off
+
+% when you plot a single vector by itself,MATLAB uses the vector values as the y-axis data and sets the x-axis data to range from 1 to n
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(v1)
+
+%plot v1 wirh a line width of 3
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(v1,"LineWidth",3) % draws the line in the graph with width of 3
+
+% Plot v1(y-axis) against sample(x-axis) with red(r) circle(o) markers and a solide line(-) and a line width of 4.
+load datafile
+sample=data(:,1);
+density=data(:,2);
+v1=data(:,3);
+v2=data(:,4);
+mass1=density.*v1;
+mass2=density.*v2;
+plot(sample,v1,"r-o","LineWidth",4) % draws the line in the graph with width of 4
+
